@@ -4,4 +4,4 @@ export enum Routes {
 	HOME = '/',
 }
 
-const MainLayoutLazy = lazy(() => import("../shared/layout/MainLayout"));
+export const MainLayoutLazy = lazy(() => import("../shared/layout/main-layout"));

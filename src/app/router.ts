@@ -1,13 +1,12 @@
 import {
 	createBrowserRouter,
 } from "react-router";
-import MainLayout from "@/shared/layout/MainLayout";
-import { Routes } from "./routes";
+import { MainLayoutLazy, Routes } from "./routes";
 
 const router = createBrowserRouter([
 	{
 		path: Routes.HOME,
-		Component: MainLayout,
+		Component: MainLayoutLazy,
 		children: [
 			/*{
 				path: "/",
@@ -18,3 +17,5 @@ const router = createBrowserRouter([
 		]
 	},
 ]);
+
+export default router;
